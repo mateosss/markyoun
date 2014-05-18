@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QWidget" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>251</width>
+    <height>284</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>251</width>
+    <height>284</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>251</width>
+    <height>284</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MarkYoun!</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Resource/icono.png</normaloff>Resource/icono.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="nuevo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Crear nuevo archivo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>Nuevo MarkDown</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Nuevo.png</normalon>
+    </iconset>
+   </property>
+   <property name="shortcut">
+    <string comment="&quot;Ctrl+s&quot;">Return</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="abrir">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Precargar un archivo .md&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>Abrir MarkDown</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Guardar.png</normalon>
+    </iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="opciones">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>210</y>
+     <width>231</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Cierre la Aplicación&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>Opciones/Ajustes</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Resource/opciones.png</normaloff>Resource/opciones.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ayuda">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Toque aquí si no sabe por donde empezar o quiere profundizar el programa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Ayuda.png</normalon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pregunta">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum&quot;;</string>
+   </property>
+   <property name="text">
+    <string>¿Qué desea hacer?</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ayuda</sender>
+   <signal>clicked()</signal>
+   <receiver>Menu</receiver>
+   <slot>ayuda()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nuevo</sender>
+   <signal>clicked()</signal>
+   <receiver>Menu</receiver>
+   <slot>nuevo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>abrir</sender>
+   <signal>clicked()</signal>
+   <receiver>Menu</receiver>
+   <slot>abrir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>opciones</sender>
+   <signal>clicked()</signal>
+   <receiver>Menu</receiver>
+   <slot>opciones()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>abrir()</slot>
+  <slot>nuevo()</slot>
+  <slot>opciones()</slot>
+  <slot>ayuda()</slot>
+ </slots>
+</ui>

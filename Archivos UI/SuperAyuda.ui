@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>516</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>516</width>
+    <height>422</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>516</width>
+    <height>422</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Informacion</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Resource/utilidad.png</normaloff>Resource/utilidad.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>498</width>
+       <height>404</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Acerca de MarkYoun!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;MarkYoun! es desarrollado por Mateo de Mayo&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Utiliza las librerías PyQt4, pypandoc y markdown para su funcionamiento&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Además de pandoc para la conversión de alguno de sus formatos&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Este programa es completamente libre, puede hacer lo que quiera con él.&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Puede encontrar el código fuente en &lt;a href=&quot;http://www.github.com/mateosss/markyoun&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://www.github.com/mateosss/markyoun&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.github.com/mateosss/markyoun&quot;&gt;&lt;span style=&quot; font-style:italic; text-decoration: underline; color:#000000;&quot;&gt;MarkYoun! Es un editor de archivos con extensión &amp;quot;.md&amp;quot; y apartir de los cuales&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://www.github.com/mateosss/markyoun&quot;&gt;&lt;span style=&quot; font-style:italic; text-decoration: underline; color:#000000;&quot;&gt;puede generar diversos archivos con varios formatos gracias a pandoc&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignHCenter|Qt::AlignTop</set>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

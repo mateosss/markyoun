@@ -1,0 +1,3217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Editor2</class>
+ <widget class="QMainWindow" name="Editor2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Nimbus Sans L</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MarkYoun!</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Resource/icono.png</normaloff>Resource/icono.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="Trabajo" rowstretch="0,0" columnstretch="0,0,0,0,0">
+    <property name="horizontalSpacing">
+     <number>6</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>9</number>
+    </property>
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="tabs">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="documentMode">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="editor">
+       <attribute name="icon">
+        <iconset>
+         <normalon>Resource/archivo.png</normalon>
+        </iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Editor</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTextEdit" name="editando">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Nimbus Sans L</family>
+           </font>
+          </property>
+          <property name="cursor" stdset="0">
+           <cursorShape>IBeamCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::StrongFocus</enum>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::HLine</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Nimbus Sans L'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="tabStopWidth">
+           <number>32</number>
+          </property>
+          <property name="acceptRichText">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="vistapreliminar">
+       <attribute name="icon">
+        <iconset>
+         <normalon>Resource/Ayuda.png</normalon>
+        </iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Ayudame a entender esto Youn!</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QWebView" name="vistaHtml1" native="true">
+          <property name="font">
+           <font>
+            <family>Nimbus Sans L</family>
+           </font>
+          </property>
+          <property name="url" stdset="0">
+           <url>
+            <string>file:///home/mateo/Escritorio/MarkYoun! v0.4 beta/Help/Ayuda.md.html</string>
+           </url>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="5">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="2">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="seleccionFormato">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>82</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Formato general</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Formato</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/formato.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Linea Divisora</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/linea.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Negrita</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/Negrita.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Cursiva</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/Cursiva.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Subrayado</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/underline.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tachado</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/tachado.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Texto Mayor</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/big.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Texto Menor</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/small.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Superindice</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/superindice.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Subindice</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/subindice.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Salto de Linea</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/br.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Parrafo a la Izquierda</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/izquierda.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Parrafo a la Derecha</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/derecha.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Parrafo Centrado</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/centrado.png</normalon>
+          </iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QComboBox" name="seleccionLinea">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>128</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Formato de Línea</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Linea</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/lineaF.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1- Titulo</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/H1.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2- Titulo</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/H2.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3- Titulo</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/H3.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1- Cita</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/cita.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2- Cita</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/cita.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3- Cita</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/cita.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Codigo</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/codigo.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lista N</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/listaN.png</normalon>
+          </iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lista</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>Resource/lista.png</normalon>
+          </iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="guardar">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Guardar</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resource/Guardar.png</normaloff>Resource/Guardar.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>26</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QPushButton" name="html">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Insertar Utilidades MarkYoun</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resource/utilidad.png</normaloff>Resource/utilidad.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>26</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QPushButton" name="link">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Insertar Contenido Externo</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resource/imagen.png</normaloff>Resource/imagen.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>26</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="9">
+       <widget class="QPushButton" name="aPdf">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Exportar a pdf</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resource/aPdf.png</normaloff>Resource/aPdf.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>26</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="10">
+       <widget class="QPushButton" name="aOdt">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Exportar a odt</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resource/aOdt.png</normaloff>Resource/aOdt.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>26</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="11">
+       <widget class="QPushButton" name="aEpub">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Exportar a epub</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resource/aEpub.png</normaloff>Resource/aEpub.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>26</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="8">
+       <widget class="QPushButton" name="aHtml">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="toolTip">
+         <string>Exportar a Html</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>Resource/aHtml.png</normaloff>Resource/aHtml.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>26</width>
+          <height>26</height>
+         </size>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="12">
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="14">
+       <widget class="QLineEdit" name="url">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>680</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>107</red>
+              <green>107</green>
+              <blue>107</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>107</red>
+              <green>107</green>
+              <blue>107</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>153</red>
+              <green>153</green>
+              <blue>153</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="cursor">
+         <cursorShape>IBeamCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Dirección del contenido</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="4">
+     <layout class="QGridLayout" name="visor">
+      <item row="2" column="0">
+       <widget class="QWebView" name="vistaHtml" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="url" stdset="0">
+         <url>
+          <string>file://pepe.html</string>
+         </url>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="herramientasVisor_2">
+        <item>
+         <widget class="QPushButton" name="back">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="toolTip">
+           <string>Anterior</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>Resource/atras.png</normaloff>Resource/atras.png</iconset>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="home">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="toolTip">
+           <string>Volver al visor</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>Resource/home.png</normaloff>Resource/home.png</iconset>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="next">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="toolTip">
+           <string>Siguiente</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>Resource/Siguiente.png</normaloff>Resource/Siguiente.png</iconset>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="buscador">
+          <property name="font">
+           <font>
+            <stylestrategy>PreferDefault</stylestrategy>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>IBeamCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="toolTip">
+           <string>Buscar en Google</string>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Normal</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="dragEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="placeholderText">
+           <string>Buscar</string>
+          </property>
+          <property name="cursorMoveStyle">
+           <enum>Qt::LogicalMoveStyle</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ir">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="toolTip">
+           <string>Buscar</string>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>Resource/go.png</normaloff>Resource/go.png</iconset>
+          </property>
+          <property name="shortcut">
+           <string>Return</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="imagenes">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>94</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>94</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="toolTip">
+           <string>Buscar solo imagenes?</string>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Imagenes</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeatDelay">
+           <number>0</number>
+          </property>
+          <property name="autoRepeatInterval">
+           <number>0</number>
+          </property>
+          <property name="tristate">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>774</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPepe">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionArchivo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionRestaurar_Sesion"/>
+    <addaction name="separator"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_Como"/>
+    <addaction name="separator"/>
+    <addaction name="actionCerra"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="font">
+     <font>
+      <family>Nimbus Sans L</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>Edicion</string>
+    </property>
+    <widget class="QMenu" name="menuLinea">
+     <property name="title">
+      <string>Linea</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resource/lineaF.png</normaloff>Resource/lineaF.png</iconset>
+     </property>
+     <addaction name="action1_Titulo"/>
+     <addaction name="action1_Cita"/>
+     <addaction name="actionCodigo_2"/>
+     <addaction name="actionLista_N"/>
+     <addaction name="actionLista_2"/>
+    </widget>
+    <widget class="QMenu" name="menuFormato">
+     <property name="title">
+      <string>Formato</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resource/formato.png</normaloff>Resource/formato.png</iconset>
+     </property>
+     <addaction name="actionLinea_Divisora"/>
+     <addaction name="actionNegrita_2"/>
+     <addaction name="actionCursiva_2"/>
+     <addaction name="actionSubrayado"/>
+     <addaction name="actionTachado"/>
+     <addaction name="actionTexto_Mayor"/>
+     <addaction name="actionTexto_Menor"/>
+     <addaction name="actionSuperindice"/>
+     <addaction name="actionSubindice"/>
+     <addaction name="actionSalto_de_Linea"/>
+     <addaction name="actionParrafo_a_la_Izquierda"/>
+     <addaction name="actionParrafo_a_la_Derecha"/>
+     <addaction name="actionParrafo_Centrado"/>
+    </widget>
+    <addaction name="actionDeshacer"/>
+    <addaction name="actionRehacer"/>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionCortar"/>
+    <addaction name="actionPegar"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpciones"/>
+    <addaction name="separator"/>
+    <addaction name="menuLinea"/>
+    <addaction name="menuFormato"/>
+   </widget>
+   <widget class="QMenu" name="menuInsertar">
+    <property name="title">
+     <string>Insertar</string>
+    </property>
+    <addaction name="actionInsertar_Contenido"/>
+    <addaction name="actionInsertar_Utilidad"/>
+   </widget>
+   <widget class="QMenu" name="menuExportar">
+    <property name="title">
+     <string>Exportar A</string>
+    </property>
+    <widget class="QMenu" name="menuComunes">
+     <property name="title">
+      <string>Comunes</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resource/convertirComunes.png</normaloff>Resource/convertirComunes.png</iconset>
+     </property>
+     <addaction name="actionPdf"/>
+     <addaction name="actionOdt"/>
+     <addaction name="actionDocx"/>
+     <addaction name="actionEpub"/>
+     <addaction name="actionEpub3"/>
+     <addaction name="actionLatex"/>
+     <addaction name="actionPlain"/>
+     <addaction name="actionS5"/>
+     <addaction name="actionMan"/>
+     <addaction name="actionRst"/>
+    </widget>
+    <widget class="QMenu" name="menuOtros">
+     <property name="title">
+      <string>Otros</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Resource/convertirOtros.png</normaloff>Resource/convertirOtros.png</iconset>
+     </property>
+     <addaction name="actionNative"/>
+     <addaction name="actionJson"/>
+     <addaction name="actionOpendocument"/>
+     <addaction name="actionBeamer"/>
+     <addaction name="actionContext"/>
+     <addaction name="actionTexinfo"/>
+     <addaction name="actionMediawiki"/>
+     <addaction name="actionDocbook"/>
+     <addaction name="actionSlidy"/>
+     <addaction name="actionSlideous"/>
+     <addaction name="actionDzslides"/>
+     <addaction name="actionRtf"/>
+     <addaction name="actionOrg"/>
+     <addaction name="actionAsciidoc"/>
+    </widget>
+    <addaction name="menuComunes"/>
+    <addaction name="menuOtros"/>
+   </widget>
+   <addaction name="menuPepe"/>
+   <addaction name="menuExportar"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuInsertar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionArchivo">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Nuevo.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+   <property name="softKeyRole">
+    <enum>QAction::NoSoftKey</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/abrir.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Guardar.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionImprimir">
+   <property name="text">
+    <string>Imprimir</string>
+   </property>
+  </action>
+  <action name="actionCerrar">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Salir.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionTitulo">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Titulo.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Titulo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionCita">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/cita.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Cita</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionCodigo">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/codigo.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Codigo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionLista_Numerica">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/listaN.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Lista Numerica</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="actionLista">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/lista.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Lista</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionSeparador_linea">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/linea.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Separador-linea</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionNegrita">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Negrita.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Negrita</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionCursiva">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Cursiva.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Cursiva</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionInsertar_Contenido">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/imagen.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Insertar Contenido</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionInsertar_Utilidad">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/utilidad.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Insertar Utilidad</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionDeshacer">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/deshacer.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Deshacer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRehacer">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/rehacer.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Rehacer</string>
+   </property>
+  </action>
+  <action name="actionSeleccionar_todo">
+   <property name="text">
+    <string>Seleccionar todo</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/copiar.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionCortar">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/cortar.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Cortar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionPegar">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/pegar.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Pegar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionGuardar_Como">
+   <property name="icon">
+    <iconset>
+     <normaloff>Resource/Guardar.png</normaloff>Resource/Guardar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar Como</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionCerra">
+   <property name="icon">
+    <iconset>
+     <normaloff>Resource/Salir.png</normaloff>Resource/Salir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>TeX Gyre Pagella</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="action_odt">
+   <property name="text">
+    <string>Comunes</string>
+   </property>
+  </action>
+  <action name="action_docx">
+   <property name="text">
+    <string>.docx</string>
+   </property>
+  </action>
+  <action name="action_json">
+   <property name="text">
+    <string>.json</string>
+   </property>
+  </action>
+  <action name="action_epub">
+   <property name="text">
+    <string>.epub</string>
+   </property>
+  </action>
+  <action name="action_epub3">
+   <property name="text">
+    <string>.epub3</string>
+   </property>
+  </action>
+  <action name="action_fb2">
+   <property name="text">
+    <string>.fb2</string>
+   </property>
+  </action>
+  <action name="action_s6">
+   <property name="text">
+    <string>.s5</string>
+   </property>
+  </action>
+  <action name="action_slidy">
+   <property name="text">
+    <string>.slidy</string>
+   </property>
+  </action>
+  <action name="action_slideus">
+   <property name="text">
+    <string>.slideus</string>
+   </property>
+  </action>
+  <action name="action_dzslides">
+   <property name="text">
+    <string>.dzslides</string>
+   </property>
+  </action>
+  <action name="action_docbook">
+   <property name="text">
+    <string>.docbook</string>
+   </property>
+  </action>
+  <action name="action_tex">
+   <property name="text">
+    <string>.latex</string>
+   </property>
+  </action>
+  <action name="action_txt">
+   <property name="text">
+    <string>.plain</string>
+   </property>
+  </action>
+  <action name="action_rst">
+   <property name="text">
+    <string>.rst</string>
+   </property>
+  </action>
+  <action name="action_mediawiki">
+   <property name="text">
+    <string>.mediawiki</string>
+   </property>
+  </action>
+  <action name="action_textile">
+   <property name="text">
+    <string>.textile</string>
+   </property>
+  </action>
+  <action name="action_rtf">
+   <property name="text">
+    <string>.rtf</string>
+   </property>
+  </action>
+  <action name="action_org">
+   <property name="text">
+    <string>.org</string>
+   </property>
+  </action>
+  <action name="action_asciioc">
+   <property name="text">
+    <string>.asciioc</string>
+   </property>
+  </action>
+  <action name="action_native">
+   <property name="text">
+    <string>.native</string>
+   </property>
+  </action>
+  <action name="actionOdt">
+   <property name="text">
+    <string>odt</string>
+   </property>
+  </action>
+  <action name="actionDocx">
+   <property name="text">
+    <string>docx</string>
+   </property>
+  </action>
+  <action name="actionEpub">
+   <property name="text">
+    <string>epub</string>
+   </property>
+  </action>
+  <action name="actionEpub3">
+   <property name="text">
+    <string>epub3</string>
+   </property>
+  </action>
+  <action name="actionLatex">
+   <property name="text">
+    <string>latex</string>
+   </property>
+  </action>
+  <action name="actionPlain">
+   <property name="text">
+    <string>plain</string>
+   </property>
+  </action>
+  <action name="actionNative">
+   <property name="text">
+    <string>native</string>
+   </property>
+  </action>
+  <action name="actionJson">
+   <property name="text">
+    <string>json</string>
+   </property>
+  </action>
+  <action name="actionOpendocument">
+   <property name="text">
+    <string>opendocument</string>
+   </property>
+  </action>
+  <action name="actionBeamer">
+   <property name="text">
+    <string>beamer</string>
+   </property>
+  </action>
+  <action name="actionContext">
+   <property name="text">
+    <string>context</string>
+   </property>
+  </action>
+  <action name="actionTexinfo">
+   <property name="text">
+    <string>texinfo</string>
+   </property>
+  </action>
+  <action name="actionPlain_2">
+   <property name="text">
+    <string>plain</string>
+   </property>
+  </action>
+  <action name="actionMediawiki">
+   <property name="text">
+    <string>mediawiki</string>
+   </property>
+  </action>
+  <action name="actionS5">
+   <property name="text">
+    <string>s5</string>
+   </property>
+  </action>
+  <action name="actionMan">
+   <property name="text">
+    <string>man</string>
+   </property>
+  </action>
+  <action name="actionDocbook">
+   <property name="text">
+    <string>docbook</string>
+   </property>
+  </action>
+  <action name="actionSlidy">
+   <property name="text">
+    <string>slidy</string>
+   </property>
+  </action>
+  <action name="actionSlideous">
+   <property name="text">
+    <string>slideous</string>
+   </property>
+  </action>
+  <action name="actionDzslides">
+   <property name="text">
+    <string>dzslides</string>
+   </property>
+  </action>
+  <action name="actionRtf">
+   <property name="text">
+    <string>rtf</string>
+   </property>
+  </action>
+  <action name="actionOrg">
+   <property name="text">
+    <string>org</string>
+   </property>
+  </action>
+  <action name="actionAsciidoc">
+   <property name="text">
+    <string>asciidoc</string>
+   </property>
+  </action>
+  <action name="actionRst">
+   <property name="text">
+    <string>rst</string>
+   </property>
+  </action>
+  <action name="actionOpciones">
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/opciones.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Opciones</string>
+   </property>
+  </action>
+  <action name="action1_Titulo">
+   <property name="text">
+    <string>Titulo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="action2_Titulo">
+   <property name="text">
+    <string>2- Titulo</string>
+   </property>
+  </action>
+  <action name="action3_Titulo">
+   <property name="text">
+    <string>3- Titulo</string>
+   </property>
+  </action>
+  <action name="action1_Cita">
+   <property name="text">
+    <string>Cita</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action2_Cita">
+   <property name="text">
+    <string>2- Cita</string>
+   </property>
+  </action>
+  <action name="action3_Cita">
+   <property name="text">
+    <string>3- Cita</string>
+   </property>
+  </action>
+  <action name="actionCodigo_2">
+   <property name="text">
+    <string>Codigo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionLista_N">
+   <property name="text">
+    <string>Lista N</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="actionLista_2">
+   <property name="text">
+    <string>Lista</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionLinea_Divisora">
+   <property name="text">
+    <string>Linea Divisora</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionNegrita_2">
+   <property name="text">
+    <string>Negrita</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionCursiva_2">
+   <property name="text">
+    <string>Cursiva</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionSubrayado">
+   <property name="text">
+    <string>Subrayado</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionTachado">
+   <property name="text">
+    <string>Tachado</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionTexto_Mayor">
+   <property name="text">
+    <string>Texto Mayor</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="actionTexto_Menor">
+   <property name="text">
+    <string>Texto Menor</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionSuperindice">
+   <property name="text">
+    <string>Superindice</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Q</string>
+   </property>
+  </action>
+  <action name="actionSubindice">
+   <property name="text">
+    <string>Subindice</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+A</string>
+   </property>
+  </action>
+  <action name="actionSalto_de_Linea">
+   <property name="text">
+    <string>Salto de Linea</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Space</string>
+   </property>
+  </action>
+  <action name="actionParrafo_a_la_Izquierda">
+   <property name="text">
+    <string>Parrafo a la Izquierda</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+  </action>
+  <action name="actionParrafo_a_la_Derecha">
+   <property name="text">
+    <string>Parrafo a la Derecha</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+R</string>
+   </property>
+  </action>
+  <action name="actionParrafo_Centrado">
+   <property name="text">
+    <string>Parrafo Centrado</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionRestaurar_Sesion">
+   <property name="icon">
+    <iconset>
+     <normaloff>Resource/restaurarSesion.png</normaloff>Resource/restaurarSesion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Restaurar Sesión</string>
+   </property>
+  </action>
+  <action name="actionPdf">
+   <property name="text">
+    <string>pdf</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+   <slots>
+    <signal>urlChanged(const)</signal>
+    <signal>mousePressEvent()</signal>
+    <signal>linkClicked()</signal>
+    <signal>loadStarted()</signal>
+    <signal>loadFinished()</signal>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tabs</tabstop>
+  <tabstop>vistaHtml1</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionAbrir</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>abrirArchivo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionGuardar</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>guardar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionArchivo</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>nuevo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionGuardar_Como</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>guardarEn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCerrar</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCerra</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOdt</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>odt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDocx</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>docx()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEpub</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>epub()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEpub3</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>epub3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLatex</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>latex()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPlain</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>plain()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionS5</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>s5()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionMan</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>man()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRst</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>rst()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNative</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>native()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionJson</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>json()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOpendocument</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>opendocument()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionBeamer</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>beamer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionContext</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>context()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTexinfo</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>texinfo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionMediawiki</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>mediawiki()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDocbook</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>docbook()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSlidy</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>slidy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSlideous</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>slideous()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDzslides</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>dzslides()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRtf</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>rtf()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOrg</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>org()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAsciidoc</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>asciidoc()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>319</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOpciones</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>opciones()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>seleccionFormato</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Editor2</receiver>
+   <slot>seleccionFormato()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>seleccionLinea</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Editor2</receiver>
+   <slot>seleccionLinea()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>guardar</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>guardar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>256</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>link</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>link()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>html</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>insUtilidad()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>341</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aPdf</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>aPdf()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>426</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aOdt</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>aOdt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>464</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aHtml</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>aHtml()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aEpub</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>aEpub()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>502</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action1_Titulo</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>titulo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action1_Cita</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>cita()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLista_N</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>listaN()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLista_2</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>lista()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCodigo_2</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>codigo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLinea_Divisora</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>linea()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNegrita_2</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>negrita()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCursiva_2</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>cursiva()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSubrayado</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>subrayado()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTachado</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>tachado()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTexto_Mayor</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>big()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTexto_Menor</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>small()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSuperindice</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>supind()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSubindice</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>subind()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSalto_de_Linea</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>saltoDeLinea()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionParrafo_a_la_Izquierda</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>parrIzq()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionParrafo_a_la_Derecha</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>parrDer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionParrafo_Centrado</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>parrCen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>back</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>back()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>413</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>home</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>home()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>next</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>next()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>489</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ir</sender>
+   <signal>clicked()</signal>
+   <receiver>Editor2</receiver>
+   <slot>buscarG()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>662</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>editando</sender>
+   <signal>textChanged()</signal>
+   <receiver>Editor2</receiver>
+   <slot>cambia()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRestaurar_Sesion</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>restaurar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>vistaHtml</sender>
+   <signal>loadStarted()</signal>
+   <receiver>Editor2</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>673</x>
+     <y>622</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>editando</sender>
+   <signal>textChanged()</signal>
+   <receiver>Editor2</receiver>
+   <slot>estaModificado()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionInsertar_Contenido</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>link()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionInsertar_Utilidad</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>insUtilidad()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPdf</sender>
+   <signal>triggered()</signal>
+   <receiver>Editor2</receiver>
+   <slot>aPdf()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>titulo()</slot>
+  <slot>cita()</slot>
+  <slot>linea()</slot>
+  <slot>guardar()</slot>
+  <slot>lista()</slot>
+  <slot>listaN()</slot>
+  <slot>codigo()</slot>
+  <slot>link()</slot>
+  <slot>imagen()</slot>
+  <slot>negrita()</slot>
+  <slot>cursiva()</slot>
+  <slot>abrirArchivo()</slot>
+  <slot>refrescar()</slot>
+  <slot>insUtilidad()</slot>
+  <slot>nuevo()</slot>
+  <slot>guardarEn()</slot>
+  <slot>odt()</slot>
+  <slot>docx()</slot>
+  <slot>epub()</slot>
+  <slot>epub3()</slot>
+  <slot>latex()</slot>
+  <slot>plain()</slot>
+  <slot>s5()</slot>
+  <slot>man()</slot>
+  <slot>rst()</slot>
+  <slot>native()</slot>
+  <slot>json()</slot>
+  <slot>opendocument()</slot>
+  <slot>beamer()</slot>
+  <slot>context()</slot>
+  <slot>texinfo()</slot>
+  <slot>mediawiki()</slot>
+  <slot>docbook()</slot>
+  <slot>slidy()</slot>
+  <slot>slideous()</slot>
+  <slot>dzslides()</slot>
+  <slot>rtf()</slot>
+  <slot>org()</slot>
+  <slot>asciidoc()</slot>
+  <slot>opciones()</slot>
+  <slot>cambia()</slot>
+  <slot>seleccionLinea()</slot>
+  <slot>seleccionFormato()</slot>
+  <slot>aHtml()</slot>
+  <slot>aPdf()</slot>
+  <slot>aOdt()</slot>
+  <slot>aEpub()</slot>
+  <slot>subrayado()</slot>
+  <slot>tachado()</slot>
+  <slot>big()</slot>
+  <slot>small()</slot>
+  <slot>supind()</slot>
+  <slot>subind()</slot>
+  <slot>saltoDeLinea()</slot>
+  <slot>parrIzq()</slot>
+  <slot>parrDer()</slot>
+  <slot>parrCen()</slot>
+  <slot>back()</slot>
+  <slot>next()</slot>
+  <slot>home()</slot>
+  <slot>buscarG()</slot>
+  <slot>restaurar()</slot>
+  <slot>click()</slot>
+  <slot>estaModificado()</slot>
+ </slots>
+</ui>

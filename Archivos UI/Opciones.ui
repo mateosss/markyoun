@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Opciones</class>
+ <widget class="QWidget" name="Opciones">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>251</width>
+    <height>284</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>251</width>
+    <height>284</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>251</width>
+    <height>284</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MarkYoun!</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Resource/icono.png</normaloff>Resource/icono.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="clasica">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Crear nuevo archivo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string> Clásica</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Resource/Editor.png</normaloff>Resource/Editor.png</iconset>
+   </property>
+   <property name="shortcut">
+    <string comment="&quot;Ctrl+s&quot;"/>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="automatico">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>210</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Precargar un archivo .md&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>Automático</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Guardar.png</normalon>
+    </iconset>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pregunta">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum&quot;;</string>
+   </property>
+   <property name="text">
+    <string>¿Cómo quiere que sea?</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rapida">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>100</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Crear nuevo archivo&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>Rápida</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Resource/convertirOtros.png</normaloff>Resource/convertirOtros.png</iconset>
+   </property>
+   <property name="shortcut">
+    <string comment="&quot;Ctrl+s&quot;"/>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pregunta_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Diseño de interfaz:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pregunta_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Tipo de guardado:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="tradicional">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>210</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::TabFocus</enum>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Precargar un archivo .md&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="text">
+    <string>Tradicional</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Guardar.png</normalon>
+    </iconset>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>221</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 7pt &quot;TeX Gyre Pagella&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Tip: Reiniciar el programa luego de cambiar el diseño</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>clasica</sender>
+   <signal>clicked()</signal>
+   <receiver>Opciones</receiver>
+   <slot>clasica()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rapida</sender>
+   <signal>clicked()</signal>
+   <receiver>Opciones</receiver>
+   <slot>rapida()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tradicional</sender>
+   <signal>clicked()</signal>
+   <receiver>Opciones</receiver>
+   <slot>tradicional()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>automatico</sender>
+   <signal>clicked()</signal>
+   <receiver>Opciones</receiver>
+   <slot>automatico()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>clasica()</slot>
+  <slot>rapida()</slot>
+  <slot>tradicional()</slot>
+  <slot>automatico()</slot>
+ </slots>
+</ui>

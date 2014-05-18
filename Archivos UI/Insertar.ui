@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Insertar</class>
+ <widget class="QWidget" name="Insertar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>221</width>
+    <height>317</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>221</width>
+    <height>317</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>221</width>
+    <height>317</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Insertar...</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Resource/icono.png</normaloff>Resource/icono.png</iconset>
+  </property>
+  <widget class="QLineEdit" name="nombre">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>201</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>30</y>
+     <width>111</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Figurara como</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>80</y>
+     <width>72</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>   Link</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="link">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>201</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>130</y>
+     <width>91</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Descripción</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="descripcion">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>201</width>
+     <height>29</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="aceptar">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>ACEPTAR</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>Resource/Siguiente.png</normalon>
+    </iconset>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="opcInsertar">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>151</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>imagen</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>enlace</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Video de Youtube</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="error">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>181</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>aceptar</sender>
+   <signal>clicked()</signal>
+   <receiver>Insertar</receiver>
+   <slot>aceptar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>316</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>aceptar()</slot>
+ </slots>
+</ui>
