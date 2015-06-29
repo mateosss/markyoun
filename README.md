@@ -4,10 +4,11 @@
 
 - Para instalar necesitas una PC con una distro derivada de Ubuntu-Debian (Está probado unicamente en ubuntu, por favor reporta cualquier problema en otras distribuciones, y ayuda a hacer un mejor sistema de instalación, gracias)
 
-- To install you will need a Ubuntu-Debian based distro (It is proved only in ubuntu, please report issues in others distros, and help to make a better install system, thanks):
+    - To install you will need a Ubuntu-Debian based distro (It is proved only in ubuntu, please report issues in others distros, and help to make a better install system, thanks):
+
 
 - Copia y pega en la terminal la siguiente linea:
-- Copy and paste in the terminal the next line:
+    - Copy and paste in the terminal the next line:
 
     sudo wget https://www.dropbox.com/s/4bt507ealvqtff9/instalador.sh && sudo chmod +x instalador.sh && sh instalador.sh -y
 
