@@ -10,7 +10,7 @@
 - Copia y pega en la terminal la siguiente linea:
     - Copy and paste in the terminal the next line:
 
-    sudo wget https://www.dropbox.com/s/4bt507ealvqtff9/instalador.sh && sudo chmod +x instalador.sh && sh instalador.sh -y
+    sudo wget https://raw.githubusercontent.com/mateosss/markyoun/master/instalador.sh && sudo chmod +x instalador.sh && sh instalador.sh -y
 
 ----------------------------------------
 
