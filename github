@@ -1,0 +1,18 @@
+#ssh:
+
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+y copiarla en https://github.com/settings/ssh
+
+
+
+#gitinit:
+
+git config --global user.name "mateosss"
+git config --global user.email "mateodemayo@gmail.com"
+git init
+git add .
+git commit -m "version 1.0"
+git remote add origin git@github.com:mateosss/markyoun.git
+git push -f
+

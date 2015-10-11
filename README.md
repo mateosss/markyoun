@@ -1,16 +1,4 @@
-![](https://dl.dropboxusercontent.com/u/105638235/logoMarkyoun.png "")
-
 #MarkYoun!
-
-- Para instalar necesitas una PC con una distro derivada de Ubuntu-Debian (Está probado unicamente en ubuntu, por favor reporta cualquier problema en otras distribuciones, y ayuda a hacer un mejor sistema de instalación, gracias)
-
-    - To install you will need a Ubuntu-Debian based distro (It is proved only in ubuntu, please report issues in others distros, and help to make a better install system, thanks):
-
-
-- Copia y pega en la terminal la siguiente linea:
-    - Copy and paste in the terminal the next line:
-
-    sudo wget https://www.dropbox.com/s/4bt507ealvqtff9/instalador.sh && sudo chmod +x instalador.sh && sh instalador.sh -y
 
 ----------------------------------------
 
@@ -28,7 +16,17 @@ I hope that you can prove it and see its capacities, I would like to have contri
 The essence of this program is academic and for daily use,  you can do what you want with the code
 but I hope that you include my name. Mateo de Mayo or simply *"mateosss"*
 
+-----------------------------------------
 
+Necesita de las librerías markdown y pypandoc instaladas en python para eso:  
+
+    sudo apt-get install python-pip python-dev build-essential    
+    sudo pip install --upgrade pip     
+    sudo pip install --upgrade virtualenv   
+    sudo pip install markdown  
+    sudo pip install pypandoc  
+  
+-----------------------------------------
 -----------------------------------------
 -----------------------------------------
 #Información de Desarrollo
