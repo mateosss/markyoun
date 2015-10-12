@@ -19,6 +19,7 @@ wget https://www.dropbox.com/s/344jmx41hqulpdl/MarkYoun.zip
 echo "\n\n\n\nDescomprimiendo...\n\n\n\n"
 sudo mkdir /usr/
 sudo mkdir /usr/share/
+sudo mkdir /usr/share/MarkYoun/
 sudo unzip -o MarkYoun.zip -d /usr/share/MarkYoun/
 
 echo "\n\n\n\n#-----¿Desea descargar texlive y texlive-base?...-----#"
@@ -27,7 +28,7 @@ sudo apt-get install texlive texlive-base
 
 echo "\n\n\n\n#-----Configurando compatibilidad con el sistema-----#"
 cd /usr/share/MarkYoun/
-chmod +x MarkYoun
+sudo chmod +x MarkYoun
 sudo cp /usr/share/MarkYoun/MarkYoun /bin/markyoun
 sudo cp /usr/share/MarkYoun/MarkYoun.desktop /usr/share/applications/MarkYoun.desktop
 
