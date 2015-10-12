@@ -33,7 +33,7 @@ sudo mkdir /usr/
 sudo mkdir /usr/share
 sudo mkdir /usr/share/MarkYoun
 sudo mkdir /usr/share/MarkYoun/icons/
-sudo cp /home/$LOGNAME/MarkYoun/Nuevos Iconos/Creando Iconos/svg/icono.png /usr/share/MarkYoun/icons/icono.png
+sudo cp /home/$LOGNAME/MarkYoun/Nuevos\ Iconos/Creando\ Iconos/svg/icono.png /usr/share/MarkYoun/icons/icono.png
 
 sudo cp /home/$LOGNAME/MarkYoun/
 #echo "\n\n\n\nUbicandolo en el escritorio, si no tiene el ejecutable estará en /home/USTED/MarkYoun/\n\n\n\n"
@@ -41,11 +41,11 @@ sudo cp /home/$LOGNAME/MarkYoun/
 #cp $HOME/MarkYoun/MarkYoun $HOME/Desktop/MarkYoun
 #cp $HOME/MarkYoun/MarkYoun $HOME/MarkYoun
 
-echo "\n\n\n\nEjecutando MarkYoun por primera vez...\n\n\n\n"
-markyoun
-
 echo "\n\n\n\nEliminando restos del instalador de MarkYoun de su equipo\n\n\n\n"
 cd $HOME/
 rm -f $HOME/MarkYoun.zip
 rm -f $HOME/Downloads/distribute_setup.py
 rm -f $HOME/instalador.sh
+
+echo "\n\n\n\nEjecutando MarkYoun por primera vez...\n\n\n\n"
+markyoun
