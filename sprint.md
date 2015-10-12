@@ -1,10 +1,8 @@
-descompirmir todo el programa en /usr/share/markyoun
+DONEmodificar el sh para que calce con la nueva ubicacion
 
-modificar el sh para que calce con la nueva ubicacion
+DONEmover el sh a /bin/markyoun, para crear variable de entorno
 
-mover el sh a /bin/markyoun, para crear variable de entorno
-
-crear entrada .desktop en /usr/share/applications/MarkYoun.desktop:
+DONEcrear entrada .desktop en /usr/share/applications/MarkYoun.desktop:
 [Desktop Entry]
 Name=MarkYoun
 Exec=markyoun
@@ -14,7 +12,7 @@ Categories=GTK;GNOME;Utility;
 
 que el zip este en github
 
-fijarse como hacer para que el icono funcione
+DONEfijarse como hacer para que el icono funcione
 
 y fijarse como hacer para que abra archivos .md directamente
 
@@ -23,3 +21,5 @@ desactivar que transforme automaticamente a html
 reorganizar carpetas, borrar archivos inutiles
 
 rearmar anotaciones, entender bien version actual
+
+que se instale en /usr/share/MarkYoun pero que guarde los archivos restaurados y eso en home, cuando eso pase poner bien la ubicacion del icono
