@@ -1016,11 +1016,11 @@ class Ayuda(QtGui.QMainWindow):
 
 if __name__=="__main__":
     app=QtGui.QApplication(sys.argv)
-    if len(sys.argv) == 1:
-        myapp = Menu()
     if len(sys.argv) == 2:
         myapp = Editor(archivo = sys.argv[1])
         print(sys.argv[1])
+    else:
+        myapp = Menu()
     myopciones = Opciones()
     myapp.show()
     myeditor = Editor(None)
