@@ -10,7 +10,7 @@ Icon=/home/$LOGNAME/MarkYoun/Nuevos Iconos/Creando Iconos/svg/icono.png
 Type=Application
 Categories=GTK;GNOME;Utility;
 
-que el zip este en github
+DONEque descargue desde github
 
 DONEfijarse como hacer para que el icono funcione
 

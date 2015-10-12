@@ -106,11 +106,13 @@ class Opciones(QtGui.QMainWindow):
 
 class Editor(QtGui.QMainWindow):
 
-    archivo = "Nuevo Markdown.md"
+    archivo = None
 
-    def __init__(self, parent=None):
+    def __init__(self, parent=None, archivo = "Nuevo Markdown.md"):
         QtGui.QWidget.__init__(self,parent)
-
+        
+        self.archivo = archivo
+    
         config = ConfigParser.RawConfigParser()
         config.read("preferencias.cfg")
 
@@ -130,6 +132,14 @@ class Editor(QtGui.QMainWindow):
         self.ui.setupUi(self)
         limpiar = open(self.simplificarNombre(self.archivo)+".html","w")
         limpiar.close()
+        if self.archivo != "Nuevo Markdown.md":
+            fname = codecs.open(self.archivo,"r",encoding='utf-8')
+            data = fname.read()
+            self.ui.editando.clear()
+            self.setTexto(data)
+            self.nombreAMostrar(self.archivo)
+            self.guardar()
+            self.setPagina()        
         self.setPagina()
 
 
@@ -1006,10 +1016,14 @@ class Ayuda(QtGui.QMainWindow):
 
 if __name__=="__main__":
     app=QtGui.QApplication(sys.argv)
-    myapp = Menu()
+    if len(sys.argv) == 1:
+        myapp = Menu()
+    if len(sys.argv) == 2:
+        myapp = Editor(archivo = sys.argv[1])
+        print(sys.argv[1])
     myopciones = Opciones()
     myapp.show()
-    myeditor = Editor()
+    myeditor = Editor(None)
     myinsertar = Insertar()
     myutilidad = Utilidad()
     myayuda = Ayuda()

@@ -1,73 +1,139 @@
-<HEAD><TITLE>Historia: La década Infame</HEAD></TITLE>
 
-#Golpe de estado de 1930
+
+
+
+
+
+
+
+
+
+#Argentina Debate
+
+-----------------------------------------
+
+Integrantes: Francisco de Maussion, Gastón Fortuna, Santiago García, Mateo de Mayo, Rodrigo Toledo
+
+##Información Preliminar
+
+-----------------------------------------
+
+####Ente Organizador: Argentina Debate
+
+####Participantes:
+- Mauricio Macri
+- Margarita Stolbizer
+- Sergio Massa
+- Nicolás del Caño
+- Alberto Rodriguez Saá
+- Daniel Scioli (No asistió)
+
+####Reglas de Desarrollo: 
+- Orden de postulados aleatorio
+- El locutor asigna un tema
+- Orden aleatoria de turno para hablar con dos minutos para hablar sobre el tema
+- Por sorteo se decidía a otro candidato con 30 segundos para hacerle una pregunta al candidato que expuso
+- Y el primero tenía un minuto para responderla
+
+####Espacio de Realización: Salón de la UBA
+
+-----------------------------------------
+
+##Temas
+
+1. ¿Cuáles fueron los temas debatidos?
+
+	- Desarrollo Económico y Humano
+	- Educación e Infancia
+	- Seguridad
+	- Calidad Institucional
+
+2. ¿Considera los temas apropiados para un debate de candidatos presidenciales?
+
+	Sí, son las principales problemáticas discutidos frente al poder ejecutivo de la Argentina y son de primordial resolución para el avance de la nación.
+
+3. ¿Considera suficientes o insuficientes los temas debatidos?¿Cuál o cuáles hubiera agregado o quitado al debate?¿Merecía un debate más o menos amplío alguno/s temas?¿Por qué?
+
+	Fueron suficientes, sin embargo se debería haber dado más tiempo para el desarrollo de sus respuestas y hubiese sido mejor si además se le agregaban preguntas donde planteasen casos hipotéticos sobre situaciones posibles que se puedan dar sobre su mandato, y así poder ver la forma en que cada quién lo afrontaría en dicha situación.  
+
+##Propuestas
+
+-----------------------------------------
+
+1. ¿Cuál o cuáles fueron las propuestas de cada candidato/fuerza en relación a cada tema elegido para debatir?
+
+	- **Desarrollo Económico y Humano**
+
+		- Macri: *"Una Argentina con pobreza cero", "Un millón de créditos para la adquisición de viviendas a pagar en 30 años"* y Eliminar el impuesto a las ganancias.
+
+		- Del Caño: Salario igual a la canasta familiar; 82% a los jubilados, eliminar el impuesto a las ganancias y *"Un gobierno de los trabajadores"*.
+		
+		- Stolbizer: Cuidado del medio ambiente y los recursos naturales con un estado al servicio de la población.
+
+		- Rodriguez Saá: *"Ampliar el aparato productivo"*.
+		
+		- Massa: Programa económico a largo plazo y que los recursos de los jubilados sean destinado exclusivamente a los jubilados.
+
+	- **Educación e Infancia**
+
+		- Macri: 
+
+		- Del Caño: Jornada extendida en todo el país, que el salario de los docentes cubra la canasta básica
+
+		- Stolbizer: Cambiar el modelo de escuela, mejor formación y sueldo para los docentes,  pacto por la defensa de la educación pública. 
+
+		- Rodriguez Saá: 
+
+		- Massa: 
+
+	- **Seguridad**
+
+		- Macri: 
+
+		- Del Caño: 
+
+		- Stolbizer: 
+
+		- Rodriguez Saá: 
+
+		- Massa: 
+
+	- **Calidad Institucional**
+
+		- Macri: 
+
+		- Del Caño: 
+
+		- Stolbizer: 
+
+		- Rodriguez Saá: 
+
+		- Massa: 
+
+2. ¿Usted, como ciudadano, qué propuesta/s considera deberían haberse debatido?
+
+3. ¿Usted, como candidato, qué propuesta/s hubiera planteado como primordial en un debate como el realizado?
+
 ##Preguntas
 
 -----------------------------------------
 
-1. como se explica que Yrigoyen que habia ganado las elecciones presidenciales con el 61,7% de los votos fuera desalojado del gobierno sin grandes dificultades.
+1. ¿Considera apropiadas las preguntas que cada candidato realizó a su adversario político?¿Cuál/es hubiera hecho usted como ciudadano?¿Y cuáles como candidato?
 
-2. Cuales fueron las principales caracteristicas del gobierno de Uriburu.
+2. ¿Se indagó sobre aspectos consagrados en la Constitución Nacional?¿Cuál/es?¿De quñe forma?
 
-##Respuestas
+3. ¿Las respuestas de cada candidato satisfacieron su/s expectativas?¿Por qué?
+
+##Conclusiones
 
 -----------------------------------------
 
-1. La crisis de wall street, con la cual las fuerzas conservadoras hallaron la oportunidad de recuperar el terreno perdido en 1916. El pueblo afectado ante la crisis cambia la opinion del pueblo que ve que Yrigoyen no puede con la misma y la oposición al mismo tiempo.
+1. ¿Cuál fue la finalidad que tuvo la realización del debate de candidatos presidenciales?
 
-2. 
-	-  régimen corporativista y autoritario.
-	-  medidas para evitar la resistencia  de los partidarios de yrigoyen y del movimiento obrero.
-	- replanto la ley marcial y la pena de muerte 
+2. Teniendo en cuenta el análisis de especialistas y sociedad en general, ¿Cuál cree que es el resultado/balance del debate para el candidato, para el Partido o Fuerza que representa y para la Ciudadanía en general?
 
-![pepe](file:///home/mateo/Escritorio/Documentos/Historia%20La%20decada%20infame/g3101.png
- "")
+3. ¿Tiene alguna importancia la concreción de un debate en un estado cuya forma de gobierno es representativa, republicana y federal?¿En su caso, cuál/es?
 
+4. ¿Contribuyó el debate a su formación política?¿Definió su voto en las próximas elecciones?
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Período 1932-1943 (Economía)
-
-###Crisis del modelo Agro-Exportador
-
-La crisis Económica mundial Afecto a la economía argentina. Los países centrales(los industrializados) se volvieron proteccionistas. *Gran Bretaña* , comprador de carnes y cereales argentinos estableció acuerdos preferenciales con sus colonias. Argentina disminuyó las exportaciones
-
-###Proceso de industrialización o sustitución de importaciones
-
-A partir de 1935 fue notorio el crecimiento del sector industrial en las ramas alimenticias, textil,de productos químicos, metálicos, y derivados del caucho. Los países que invirtieron fueron Estados unidos, Alemania y Francia. Las empresas que se instalaron: artefactos eléctricos y maquinarias (Philco y unión cardive RVI(?)), en productos derivados del caucho: *"Goodyear" y "Earstone"*, en productos farmaceúticos y de tocador: *"Johnson y Johnson" y "Pons"*. Las industrias se ubicaron en el *Gran Buenos aires* y en el *Litoral* lo que generó desplazamientos de la población.
-
-###Intervención Estatal
-
-1.	**Tratado Roca-Runciman**: Este tratado se firmó el 1 de mayo de 1933, entre Roca hijo y el ministro de comercio británico Runciman. Se produjo por las consecuencias de la crisis mundial, lo cual hizo a GB querer dejar de comprar carne a la argentina pero a cambio de que eso no sucediera la Argentina se comprometió a:
-	- 85% de la carne debía exportarse por frigoríficos ingleses y el resto debían ser llevados en barcos ingleses
-	- Todo el dinero que se obtenía era para comprar a los ingleses
-	- No reducir tarifas a ferrocarriles ingleses
-	- Dar libertad de tarifas de la aduana a los ingleses
-	- Evitar el avance de frigoríficos de EEUU resguardando los intereses de los Ingleses.
-
-	Con este tratado prácticamente dejaron la Argentina a mercer del capital extranjero, esto 		luego produjo mayor oposición.  
-
-2. **Banco Central**: Se crea en *Banco central de la República Argentina* en 1935 Intentando así controlar la emisión de moneda, mantener una estabilidad económica y regular los créditos.
-
-3. Juntas reguladoras
-4. Corporación de transportes
+5. ¿Considera que el debate de candidatos es un aporte al fortalecimiento democrático?¿Por qué?
