@@ -22,8 +22,6 @@ sudo pip install pypandoc
 echo "\n\n\n\n#-----Descargando y descomprimiendo MarkYoun desde dropbox...-----#\n\n\n\n"
 wget https://www.dropbox.com/s/344jmx41hqulpdl/MarkYoun.zip
 echo "\n\n\n\nDescomprimiendo...\n\n\n\n"
-sudo mkdir /usr/
-sudo mkdir /usr/share/
 unzip -o MarkYoun.zip
 
 echo "\n\n\n\n#-----Configurando compatibilidad con el sistema-----#"
@@ -31,7 +29,13 @@ cd /home/$LOGNAME/MarkYoun/
 sudo chmod +x MarkYoun
 sudo cp /home/$LOGNAME/MarkYoun/MarkYoun /bin/markyoun
 sudo cp /home/$LOGNAME/MarkYoun/MarkYoun.desktop /usr/share/applications/MarkYoun.desktop
+sudo mkdir /usr/
+sudo mkdir /usr/share
+sudo mkdir /usr/share/MarkYoun
+sudo mkdir /usr/share/MarkYoun/icons/
+sudo cp /home/$LOGNAME/MarkYoun/Nuevos Iconos/Creando Iconos/svg/icono.png /usr/share/MarkYoun/icons/icono.png
 
+sudo cp /home/$LOGNAME/MarkYoun/
 #echo "\n\n\n\nUbicandolo en el escritorio, si no tiene el ejecutable estará en /home/USTED/MarkYoun/\n\n\n\n"
 #cp $HOME/MarkYoun/MarkYoun $HOME/Escritorio/MarkYoun
 #cp $HOME/MarkYoun/MarkYoun $HOME/Desktop/MarkYoun
