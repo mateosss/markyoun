@@ -1,3 +1,3 @@
-cd /home/$LOGNAME/MarkYoun/MarkYoun\!/
+cd /usr/share/MarkYoun/MarkYoun\!/
 python MarkYoun\!.py 
 
