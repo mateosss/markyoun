@@ -1,5 +1,10 @@
 echo "\n\n\n\n#-----Comenzando instalación de MarkYoun-----#\n\n\n\n"
 
+echo "\n\n\n\n#-----¿Desea descargar texlive y texlive-base?...-----#"
+echo "Puede elegir no hacerlo, pero no podrá convertir sus archivos al formato pdf"
+echo "No se le volverá a preguntar nada durante la instalación, puede ir a tomar un café.\n\n\n\n"
+sudo apt-get install texlive texlive-base
+
 echo "\n\n\n\n#-----Eliminando versiones anteriores de markyoun...-----#\n\n\n\n"
 sudo rm -rf /home/$LOGNAME/MarkYoun/
 sudo rm /usr/applications/MarkYoun.desktop
@@ -20,10 +25,6 @@ echo "\n\n\n\nDescomprimiendo...\n\n\n\n"
 sudo mkdir /usr/
 sudo mkdir /usr/share/
 unzip -o MarkYoun.zip
-
-echo "\n\n\n\n#-----¿Desea descargar texlive y texlive-base?...-----#"
-echo "Puede elegir no hacerlo, pero no podrá convertir sus archivos al formato pdf\n\n\n\n"
-sudo apt-get install texlive texlive-base
 
 echo "\n\n\n\n#-----Configurando compatibilidad con el sistema-----#"
 cd /home/$LOGNAME/MarkYoun/
