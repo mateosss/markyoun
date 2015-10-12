@@ -12,17 +12,14 @@ sudo rm /bin/markyoun
 
 echo "\n\n\n\n#-----Descargando componentes necesarios para la instalación-----#"
 echo "unzip, python, python-qt4, pandoc, python-pip, librerías python markdown y pypandoc\n\n\n\n"
-sudo apt-get install python -y
-sudo apt-get install python-qt4 -y
-sudo apt-get install pandoc -y
-sudo apt-get install python-pip -y
+sudo apt-get install git python python-qt4 pandoc python-pip -y
 sudo pip install markdown
 sudo pip install pypandoc
 
-echo "\n\n\n\n#-----Descargando y descomprimiendo MarkYoun desde dropbox...-----#\n\n\n\n"
-wget https://www.dropbox.com/s/344jmx41hqulpdl/MarkYoun.zip
-echo "\n\n\n\nDescomprimiendo...\n\n\n\n"
-unzip -o MarkYoun.zip
+echo "\n\n\n\n#-----Descargando MarkYoun desde GitHub...-----#\n\n\n\n"
+#wget https://www.dropbox.com/s/344jmx41hqulpdl/MarkYoun.zip
+cd
+git clone https://github.com/mateosss/markyoun MarkYoun
 
 echo "\n\n\n\n#-----Configurando compatibilidad con el sistema-----#"
 cd /home/$LOGNAME/MarkYoun/
