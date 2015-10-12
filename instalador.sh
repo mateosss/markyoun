@@ -14,7 +14,7 @@ sudo apt-get install python-pip -y
 sudo pip install markdown
 sudo pip install pypandoc
 
-echo "\n\n\n\n#-----Descargando MarkYoun desde dropbox...-----#\n\n\n\n"
+echo "\n\n\n\n#-----Descargando y descomprimiendo MarkYoun desde dropbox...-----#\n\n\n\n"
 wget https://www.dropbox.com/s/344jmx41hqulpdl/MarkYoun.zip
 echo "\n\n\n\nDescomprimiendo...\n\n\n\n"
 sudo mkdir /usr/
