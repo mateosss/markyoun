@@ -51,39 +51,37 @@ but I hope that you include my name. Mateo de Mayo or simply *"mateosss"*
 
 ## TODO
 
-[ ] tabulaciones de 4 espacios
-[ ] comprobar en la vista html si la nueva posición a establecer en vertical
+- [ ] tabulaciones de 4 espaciosh  
+- [ ] comprobar en la vista html si la nueva posición a establecer en vertical
 despues de modificar el texto es diferente a la que ya tiene para cambiarla 
-(deberia ahorrar rendimiento)
-[ ] Comprobar la vista html si esta en la posición lo más abajo posible, si es
-así quedarse ahí siempre
-[ ] se podria hacer un boton que haga que siempre se quede abajo y que se note
-cuando este activado
-[ ] nueva entrada de Menu -> Ver, para desactivar barra de estado, de 
-herramientas, y la de "Archivo, Exportar" y la barra de busquedas
-[ ] Desactivar generacion de html automatica
-[ ] Capacidad de agregar temas(Fuente, color de fondo, de texto para seccion
-MD y HTML (del ultimo tambien un CSS))
-[ ] Sacar Pestaña de ayudame sin que 
-[ ] Capacidad para tener varias pestañas
-[ ] Drag and drop de archivos
-[ ] Al borrar caracteres demora se laguea - fijarse cual es el problema
-[ ] Accesos directos personalizables por archivo de configuracion
-[ ] Fijarse si el html en ram puede ser modificado agregando cosas en lugar de
-recargarlo entero
-[ ] Revisar Instalador: que aparezca en menu accesorio, que aparezca para
+(deberia ahorrar rendimiento)  
+- [ ] Comprobar la vista html si esta en la posición lo más abajo posible, si es
+así quedarse ahí siempre  
+- [ ] se podria hacer un boton que haga que siempre se quede abajo y que se note
+cuando este activado  
+- [ ] nueva entrada de Menu -> Ver, para desactivar barra de estado, de 
+herramientas, y la de "Archivo, Exportar" y la barra de busquedas  
+- [ ] Desactivar generacion de html automatica  
+- [ ] Capacidad de agregar temas(Fuente, color de fondo, de texto para seccion
+MD y HTML (del ultimo tambien un CSS))  
+- [ ] Sacar Pestaña de ayudame   
+- [ ] Capacidad para tener varias pestañas  
+- [ ] Drag and drop de archivos  
+- [ ] Al borrar caracteres demora se laguea - fijarse cual es el problema  
+- [ ] Accesos directos personalizables por archivo de configuracion  
+- [ ] Fijarse si el html en ram puede ser modificado agregando cosas en lugar de
+recargarlo entero  
+- [ ] Revisar Instalador: que aparezca en menu accesorio, que aparezca para
 abrir archivos de texto, que soporte "markyoun Archivo.md", revisar que 
-soporte espacios y acentos y carpetas con puntos en los archivos a usar,
-[ ] Rehacer README
-[ ] Agregar funcionalidad de buscar en el archivo CTRL-F	
-[ ] Hacer que la vista html se pueda desactivar o cambiar de tamaño (separar
-en otra ventana?
-[ ] Que m***** hacer con las utilidades MarkYoun? Mejorarlas? eliminarlas?
-categorizarlas? dejar las mas utiles? 
-[ ] Tener más archivos de restauración (hasta unos 8) y que se puedan seleccionar
-y que se guarden en la posición original agregandole .restaurado.md
-[ ] Version para windows
-[ ] Un posible cursor visible en el html?
-[ ] Revisar por que no se guardo el archivo, RUTA:
-/home/mateo/Escritorio/Colegio/Higiene y Seguridad/Archivo1-1.png
-
+soporte espacios y acentos y carpetas con puntos en los archivos a usar  
+- [ ] Rehacer README  
+- [ ] Agregar funcionalidad de buscar en el archivo CTRL-F  
+- [ ] Hacer que la vista html se pueda desactivar o cambiar de tamaño (separar
+en otra ventana?  
+- [ ] Que m***** hacer con las utilidades MarkYoun? Mejorarlas? eliminarlas?
+categorizarlas? dejar las mas utiles?   
+- [ ] Tener más archivos de restauración (hasta unos 8) y que se puedan seleccionar
+y que se guarden en la posición original agregandole .restaurado.md  
+- [ ] Version para windows  
+- [ ] Un posible cursor visible en el html?  
+- [ ] Revisar por que no se guardo el archivo, RUTA: /home/mateo/Escritorio/Colegio/Higiene y Seguridad/Archivo1-1.png  
