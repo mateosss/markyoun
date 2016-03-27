@@ -1,6 +1,6 @@
-![](https://dl.dropboxusercontent.com/u/105638235/logoMarkyoun.png "")
+![ ](https://dl.dropboxusercontent.com/u/105638235/logoMarkyoun.png "")
 
-#MarkYoun!
+# MarkYoun!
 
 - Para instalar necesitas una PC con una distro derivada de Ubuntu-Debian (Está probado unicamente en ubuntu, por favor reporta cualquier problema en otras distribuciones, y ayuda a hacer un mejor sistema de instalación, gracias)
 
@@ -31,34 +31,59 @@ but I hope that you include my name. Mateo de Mayo or simply *"mateosss"*
 
 -----------------------------------------
 -----------------------------------------
-#Información de Desarrollo
-##Problemas Actuales
+# Información de Desarrollo
+## Problemas Actuales
 -----------------------------------------
 - Si la ruta tiene un punto que no es el de la extensión, MarkYoun!, guardará el archivo en rutas extrañas (en la misma con la primera carpeta que tenga un punto)
 - Sigue en marcha lo del guardado tradicional
 - Probando ideas para mejorar el rendimiento y fluidez de MarkYoun cuando se trabaja con archivos grandes
 
-##Versiones Realizadas
+## Versiones Realizadas
 -----------------------------------------
 - v0.1 - inicial
 - v0.2 - correcion de errores, desplazamiento paralelo del visor html con el editor de texto, capacidad de guardado en un archivo ya creado
 - v0.2.1 - correccion de lectura de archivos en utf-8, y capacidad de guardar creando archivos nuevos
 - v0.3 - inclusion de libreria pypandoc, exportacion a archivos de todo tipo. Mejora de UI interna.
 - v0.4 - capacidad de cambio de interfaz estilo lyx, solucion del problema de utf8, creacion de un menu de opciones
-
-##Futuras Versiones
------------------------------------------
-- v0.4.1 - eleccion entre guardado automatico y normal, y personalizacion de atajos de teclado
+- v0.4.1 - eleccion entre guardado automatico y normal
 - v0.5 - mejoras en el sistema de guardado no automatico: pregunta antes de salir, guardar archivo de recuperacion,etc
-- v0.9 - solucion de la mayor cantidad posible de bugs, mejora de ruidos visuales(whatsthis vacios), y utilidades de markyoun por tema
-- v1.0 - Version estable y usable de forma optima, agregado de utilidades de todo tipo, (se espera tener más de 100), mejora de tutorial debería de haberse corregido el problema de la cantidad limitada a 512 carácteres utf-8 y al menos saber por que no se puede iniciar el texto con "f","e" o "u", solucionar el tema de la ayuda que aveces sale aveces no.
+- v0.9 - solucion de la mayor cantidad posible de bugs, mejora de ruidos visuales(whatsthis vacios)
 
-##Posibilidades a futuro
------------------------------------------
-- posibilidad de sincronizar con nubes(blogger,wordpress,)
-- edicion paralela por internet(atravez de google docs por ejemplo), Dificil pero posible
-- simulacion de edicion dentro del mismo visor web agregando un cursor de texto al visor
-- mejoras en el visor web, botones de home, atras, busqueda de imagenes, de videos, de musica, y de insercion de links para probarlos
-- separacion de utilidades del programa con las de usuario, visor web y editor capacidad de cambiar el espacio ocupado por cada uno
-- capacidad de instalarlo en linux como un programa comun y corriente
-- compilarlo para windows.
+## TODO
+
+[ ] tabulaciones de 4 espacios
+[ ] comprobar en la vista html si la nueva posición a establecer en vertical
+despues de modificar el texto es diferente a la que ya tiene para cambiarla 
+(deberia ahorrar rendimiento)
+[ ] Comprobar la vista html si esta en la posición lo más abajo posible, si es
+así quedarse ahí siempre
+[ ] se podria hacer un boton que haga que siempre se quede abajo y que se note
+cuando este activado
+[ ] nueva entrada de Menu -> Ver, para desactivar barra de estado, de 
+herramientas, y la de "Archivo, Exportar" y la barra de busquedas
+[ ] Desactivar generacion de html automatica
+[ ] Capacidad de agregar temas(Fuente, color de fondo, de texto para seccion
+MD y HTML (del ultimo tambien un CSS))
+[ ] Sacar Pestaña de ayudame sin que 
+[ ] Capacidad para tener varias pestañas
+[ ] Drag and drop de archivos
+[ ] Al borrar caracteres demora se laguea - fijarse cual es el problema
+[ ] Accesos directos personalizables por archivo de configuracion
+[ ] Fijarse si el html en ram puede ser modificado agregando cosas en lugar de
+recargarlo entero
+[ ] Revisar Instalador: que aparezca en menu accesorio, que aparezca para
+abrir archivos de texto, que soporte "markyoun Archivo.md", revisar que 
+soporte espacios y acentos y carpetas con puntos en los archivos a usar,
+[ ] Rehacer README
+[ ] Agregar funcionalidad de buscar en el archivo CTRL-F	
+[ ] Hacer que la vista html se pueda desactivar o cambiar de tamaño (separar
+en otra ventana?
+[ ] Que m***** hacer con las utilidades MarkYoun? Mejorarlas? eliminarlas?
+categorizarlas? dejar las mas utiles? 
+[ ] Tener más archivos de restauración (hasta unos 8) y que se puedan seleccionar
+y que se guarden en la posición original agregandole .restaurado.md
+[ ] Version para windows
+[ ] Un posible cursor visible en el html?
+[ ] Revisar por que no se guardo el archivo, RUTA:
+/home/mateo/Escritorio/Colegio/Higiene y Seguridad/Archivo1-1.png
+
